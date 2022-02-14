@@ -864,4 +864,165 @@ body {
   top: 107px;
   z-index: 0;
 }
+
+.testimonial {
+  margin: 200px 133px 200px 133px;
+  position: relative;
+}
+
+.testimonial .background {
+  position: absolute;
+  left: 100px;
+  height: 504px;
+  width: 465px;
+  background-color: #F3FBFF;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.testimonial1 {
+  position: absolute;
+  top: 50px;
+  right: 918 px;
+  width: 420px;
+  height: 182px;
+  z-index: 1;
+  border-radius: 15px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 40px rgba(148, 148, 148, 0.15);
+          box-shadow: 0px 8px 40px rgba(148, 148, 148, 0.15);
+}
+
+.testimonial1 .photo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 113px 15px 30px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.testimonial1 .photo-name .photo {
+  margin: 0;
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+}
+
+.testimonial1 .photo-name .name {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  color: #00232A;
+}
+
+.testimonial1 .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  color: #787878;
+  margin-top: 5px;
+}
+
+.testimonial1 .location .flag {
+  width: 22px;
+  height: 16px;
+}
+
+.testimonial1 .location p {
+  margin: 0 0 0 10px;
+}
+
+.testimonial1 .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFC700;
+  font-size: 18px;
+  margin-left: 17px;
+}
+
+.testimonial1 .rating img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.testimonial1 .rating div {
+  line-height: 18px;
+}
+
+.testimonial1.second {
+  top: 272px;
+  right: 673px;
+  left: 245px;
+}
+
+.testemonial-text {
+  margin: 15px 30px 30px 105px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #787878;
+}
+
+.Text-Testimonial {
+  position: absolute;
+  top: 131px;
+  left: 815px;
+  width: 519px;
+  font-family: DM Sans;
+  font-style: normal;
+}
+
+.Text-Testimonial h2 {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #00232A;
+}
+
+.Text-Testimonial p {
+  margin: 0 0 40px 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #675F5F;
+}
+
+.Text-Testimonial button {
+  margin: 0 392px 0 0;
+  width: 162px;
+  height: 27px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 0;
+  border-bottom: 1px solid #444444;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  color: #00232B;
+}
+
+.Text-Testimonial button img {
+  width: 20px;
+  height: 20px;
+}
+
+.Text-Testimonial button:hover {
+  color: #FF9A16;
+  border-bottom: 1px solid #FF9A16;
+}
 /*# sourceMappingURL=main3.css.map */
