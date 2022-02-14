@@ -5,35 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1>Вакансия: Junior Frontend Developer</h1>
-    <!-- <div 
-    Style="
-    height: 100px;
-    width: 45%;
-    display: inline-block;"> -->
+<form>
+<div class="conteiner">
+    <h1>Вакансия: Junior Frontend Developer</h1>   
     <img src="./images/photo2.jpeg"
         alt="Здесь могло бы быть Ваше фото" width="333" height="187"  >       
-    <!-- </div> -->
-    <div Style="
-    height: 100px;
-    width: 50%;
-    margin-left: 10px;
-    transform: translateY(-95%);   
-    display: inline-block;">
-    <p>Имя: Тимоти Хэл Шаламе</p>
-    <p><a href="https://github.com/Breslavchik.html">Ссылка на репозиторий в GitHub</a></p>
-    <p>Опыт работы: нет</p>
-</div>
-<div><p>Дата собеседования: <input type="date"></p>
-</div>
-<div><p>Уровень английского:</p>
-<label>
+    <div class="first-info" >
+      <h2>Имя:<h2> <p>Тимоти Хэл Шаламе</p>
+        <br>
+      <p><a href="https://github.com/Breslavchik.html">Ссылка на репозиторий в GitHub</a></p>
+      <br>
+      <h2>Опыт работы:</h2>
+      <p id="no">нет</p>
+    </div>
+<div class="all-info">
+   <div><h3>Дата собеседования: <input type="date"></h3>
+   </div>
+   <div><h3>Уровень английского:</h3>
+   <label>
     <input type="radio" name="english_level" value="Low">
     <span>Плохо</span>
-</label>
-<label>
+   </label>
+  <label>
     <input type="radio" name="english_level" value="Middle">
     <span>Средне</span>
 </label>
@@ -47,7 +43,7 @@
 </label>
 </div>
 <div>
-    <p>Ключевые навыки:</p>
+    <h3>Ключевые навыки:</h3>
     <ul>
         <li>HTML</li>
         <li>CSS/LESS</li>
@@ -59,7 +55,7 @@
     </div>
 </div>
 <div>
-    <p>Коммуникабельность: 
+    <h3>Коммуникабельность: </h3>
         <select size="1"  name="soft_skill">
             <option autofocus>Выберите значение</option>
             <option value="Cozy">Милашка</option>
@@ -69,7 +65,7 @@
             <option value="Uncomfortable">Неудобный человек</option>
             <option value="Ideal">Да он идеален!</option>
         </select>
-    </p>
+    
 </div>
 <div>
     <p>Желаемая з/п <input type="number" name="Pay" placeholder="Введите значение..."></p>
@@ -94,19 +90,8 @@
     </label>
 </div>
 <div>
-    <p>Образование, курсы и т.п.</p>  
-    <style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        border-spacing: 0;
-    }
-    td {
-    border: 2px solid #333;
-    padding: 4px; 
-    text-align: left;
-   }
-   </style>
+    <h3>Образование, курсы и т.п.</h3>  
+   
     <table>
         <thead >
             <tr>
@@ -139,9 +124,9 @@
           </tbody>
     </table>
 </div>
-<button style="
-margin-top: 10px;
-vertical-align:center;">Отправить</button>
-    
+</div>
+<button type="submit">Отправить</button>
+</div>
+</form>
 </body>
 </html>
