@@ -664,17 +664,18 @@ body {
   margin-top: 200px;
   background-color: #F7FBFD;
   padding-bottom: 100px;
+  padding-top: 100px;
   width: 1600px;
   font-family: DM Sans;
   font-style: normal;
 }
 
 .booking-system h2 {
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 20px;
-  margin-right: 572px;
-  margin-left: 571px;
+  max-width: 527px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
@@ -1054,7 +1055,8 @@ body {
 }
 
 .email {
-  margin: 40px 178px 0 178px;
+  margin: auto;
+  margin-top: 40px;
   width: 382px;
   height: 60px;
   background: #FFFFFF;
@@ -1195,7 +1197,12 @@ ul a:hover {
   margin: 0 712px 0 0;
 }
 
-.footer-social img {
+.icons {
+  margin: 0;
+  padding: 0;
+}
+
+.icons img {
   padding: 0;
   margin: 30px 0 30px 30px;
   width: 35px;

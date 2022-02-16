@@ -515,15 +515,21 @@ img {
     margin-top: 200px;
     background-color: #F7FBFD;
     padding-bottom: 100px;
+    padding-top: 100px;
     width: 1600px;
     font-family: DM Sans;
     font-style: normal;
     h2 {
-        margin: 0;
-        padding-top: 100px;
-        padding-bottom: 20px;
-        margin-right: 572px;
-        margin-left: 571px;    
+        max-width: 527px;
+        margin:auto;
+        //margin: 100px 0 20px 571px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        // padding-top: 100px;
+        // padding-bottom: 20px;
+         //padding-right: 572px;
+        // padding-left: 571px;    
     font-weight: bold;
     font-size: 40px;
     line-height: 50px;
@@ -879,7 +885,8 @@ img {
 }
 
 .email {
-    margin: 40px 178px 0 178px;
+    margin: auto;
+    margin-top: 40px;
     width: 382px;
     height: 60px;
     background: #FFFFFF;
@@ -997,6 +1004,13 @@ ul {
         margin: 0 712px 0 0;
     }
 
+    
+}
+
+.icons {
+    margin: 0;
+    padding: 0;
+    
     img {
         padding: 0;
         margin: 30px 0 30px 30px;
@@ -1004,4 +1018,3 @@ ul {
         height:35px;
     }
 }
-
