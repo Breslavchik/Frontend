@@ -50,6 +50,8 @@ nav {
   font-weight: 400;
   color: #757575;
   text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffffff00;
 }
 
 .nav-link.center {
@@ -90,19 +92,20 @@ nav {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   font-family: 'DM Sans', sans-serif;
 }
 
 .hero {
-  min-width: 1600px;
-  min-height: 824px;
+  margin: 0 auto 0 auto;
+  padding: 0 178px 328px 177px;
+  max-width: 1600px;
   background-color: #FEFFFF;
   position: relative;
 }
 
 .hero header {
-  margin-top: 30px;
+  margin: 0;
   z-index: 1;
   opacity: 2;
 }
@@ -116,29 +119,32 @@ body {
   opacity: 1;
 }
 
-.text {
+.hero .gradient {
   position: absolute;
-  left: 177px;
-  top: 266px;
-  width: 609px;
-  height: 230px;
-  font-family: 'DM Sans', sans-serif;
+  width: 827px;
+  height: 756px;
+  right: 773px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.text {
+  margin: 0px 636px 0 0;
+  padding-top: 222px;
+  text-align: left;
 }
 
 .caption {
-  width: 609px;
-  height: 140px;
+  margin: 0 0 30px 0;
   font-weight: 700;
   font-size: 64px;
   line-height: 75px;
 }
 
 .small-text {
-  width: 515px;
-  height: 60px;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 30px;
+  margin: 30px 94px 0 0;
   line-height: 30px;
 }
 
@@ -146,7 +152,7 @@ body {
   position: absolute;
   z-index: 1;
   background-color: rgba(252, 252, 253, 0.9);
-  width: 1200px;
+  max-width: 1200px;
   height: 136px;
   left: 200px;
   top: 688px;
@@ -204,7 +210,6 @@ body {
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  /* or 116% */
   color: #00232B;
 }
 
@@ -235,9 +240,15 @@ body {
           box-shadow: 0px 8px 30px rgba(68, 68, 68, 0.404);
 }
 
+.services-container {
+  margin: 0 auto 0 auto;
+  padding: 200px 150px 0 147px;
+  max-width: 1600px;
+}
+
 .services-caption {
   margin-top: 200px;
-  margin-left: 544px;
+  margin: 0 304px 98px 385px;
   font-family: DM Sans;
 }
 
@@ -251,7 +262,7 @@ body {
 }
 
 .services-caption p {
-  margin-left: 98px;
+  margin-left: 128px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -263,10 +274,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 189px;
-  margin-top: 98px;
-  height: 301px;
-  width: 1243px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -284,9 +291,9 @@ body {
           flex-direction: column;
   font-family: DM Sans;
   font-style: normal;
-  height: 241px;
-  max-width: 288px;
-  margin-right: 85px;
+  height: 301px;
+  max-width: 304px;
+  padding: 30px;
 }
 
 .advantage h5 {
@@ -296,15 +303,15 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #00232B;
+  display: block;
 }
 
 .advantage p {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: #675F5F;
-  width: 228px;
 }
 
 .advantage.last {
@@ -346,16 +353,15 @@ body {
   background: #FF9A16;
 }
 
-.destination {
-  margin-top: 209px;
-  margin-left: 177px;
-  margin-right: 212px;
+.destination-container {
+  margin: 0 auto 0 auto;
+  padding: 178px 196px 209px 193px;
   font-family: DM Sans;
   font-style: normal;
-  width: 1211px;
+  max-width: 1600px;
 }
 
-.destination h2 {
+.destination-container h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -364,7 +370,7 @@ body {
   margin-bottom: 10px;
 }
 
-.destination p {
+.destination-container p {
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
@@ -661,20 +667,19 @@ body {
 }
 
 .booking-system {
-  margin-top: 200px;
   background-color: #F7FBFD;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  width: 1600px;
   font-family: DM Sans;
   font-style: normal;
 }
 
-.booking-system h2 {
-  max-width: 527px;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 20px;
+.booking-system-container {
+  margin: 0 auto 0 auto;
+  padding: 100px  0 0 0;
+  max-width: 1395px;
+}
+
+.booking-system-container h2 {
+  margin: 0 auto 20px auto;
   padding: 0;
   font-weight: bold;
   font-size: 40px;
@@ -683,10 +688,8 @@ body {
   color: #00232A;
 }
 
-.booking-system p {
-  margin: 0;
-  margin-left: 537px;
-  margin-right: 536px;
+.booking-system-container p {
+  margin: 0 auto o auto;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
@@ -695,10 +698,7 @@ body {
 }
 
 .search-destination {
-  margin-top: 100px;
-  margin-right: 262px;
-  margin-left: 239px;
-  height: 407px;
+  margin: 100px 136px 35px 160px;
   position: relative;
   font-family: DM Sans;
   font-style: normal;
@@ -711,9 +711,7 @@ body {
 }
 
 .search-destination h3 {
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0 40px 0;
   font-weight: bold;
   font-size: 30px;
   line-height: 37px;
@@ -722,7 +720,7 @@ body {
 
 .search-destination p {
   margin: 0;
-  margin-right: 706px;
+  padding: 0 729px 71px 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
@@ -751,10 +749,7 @@ body {
 }
 
 .select-destination {
-  margin-top: 70px;
-  margin-right: 276px;
-  margin-left: 224px;
-  height: 407px;
+  margin: 70px 173px 35px 122px;
   position: relative;
   font-family: DM Sans;
   font-style: normal;
@@ -780,7 +775,7 @@ body {
 
 .select-destination p {
   margin: 0;
-  margin-left: 712px;
+  padding: 0 0 71px 712px;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
@@ -809,10 +804,8 @@ body {
 }
 
 .booking-destination {
-  margin-top: 70px;
-  margin-right: 266px;
-  margin-left: 262px;
-  height: 407px;
+  margin: 70px 163px 0 160px;
+  padding-bottom: 100px;
   position: relative;
   font-family: DM Sans;
   font-style: normal;
@@ -838,7 +831,7 @@ body {
 
 .booking-destination p {
   margin: 0;
-  margin-right: 678px;
+  padding: 0 678px 81px 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
@@ -866,16 +859,16 @@ body {
   z-index: 0;
 }
 
-.testimonial {
-  margin: 200px 133px 200px 133px;
-  height: 504px;
-  width: 1334px;
+.testimonial-conteiner {
+  margin: 0 auto 0 auto;
+  padding: 200px 133px 330px 133px;
+  max-width: 1600px;
   position: relative;
 }
 
-.testimonial .background {
+.testimonial-conteiner .background {
   position: absolute;
-  left: 100px;
+  left: 233px;
   height: 504px;
   width: 465px;
   background-color: #F3FBFF;
@@ -885,8 +878,8 @@ body {
 
 .testimonial1 {
   position: absolute;
-  top: 50px;
-  right: 918 px;
+  top: 250px;
+  left: 133px;
   width: 420px;
   height: 182px;
   z-index: 1;
@@ -962,12 +955,11 @@ body {
 }
 
 .testimonial1.second {
-  top: 272px;
-  right: 673px;
-  left: 245px;
+  top: 472px;
+  left: 378px;
 }
 
-.testemonial-text {
+.testimonial-text {
   margin: 15px 30px 30px 105px;
   font-family: DM Sans;
   font-style: normal;
@@ -978,16 +970,13 @@ body {
 }
 
 .Text-Testimonial {
-  position: absolute;
-  top: 131px;
-  left: 815px;
-  width: 519px;
+  margin: 131px 0 0 815px;
   font-family: DM Sans;
   font-style: normal;
 }
 
 .Text-Testimonial h2 {
-  margin: 0 0 20px 0;
+  margin: 131px 0 20px 0;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
@@ -1003,7 +992,7 @@ body {
 }
 
 .Text-Testimonial button {
-  margin: 0 392px 0 0;
+  margin: 0 392px 30 0;
   width: 162px;
   height: 27px;
   background: #FFFFFF;
@@ -1031,13 +1020,19 @@ body {
 
 .footer {
   background-color: #070707;
-  position: relative;
   font-family: DM Sans;
   font-style: normal;
 }
 
+.footer-conteiner {
+  margin: auto;
+  padding: 66px 103px 0 102px;
+  position: relative;
+  max-width: 1600px;
+}
+
 .newsletter {
-  padding: 130px 431px 59px 431px;
+  padding: 64px 0 159px 0;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
@@ -1093,7 +1088,7 @@ body {
 }
 
 .general-information {
-  padding: 100px 206px 100px 178px;
+  padding: 0px 103px 100px 76px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1173,8 +1168,9 @@ ul a:hover {
 }
 
 .footer-social {
+  margin: 0 auto 0 auto;
   padding: 0;
-  margin: 0 178px 0 178px;
+  max-width: 1244px;
   border-top: 2px solid #181818;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1200,6 +1196,12 @@ ul a:hover {
 .icons {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .icons img {

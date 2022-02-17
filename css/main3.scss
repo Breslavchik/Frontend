@@ -5,19 +5,21 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'DM Sans', sans-serif;
     // font-family: 'Nunito', sans-serif;
 }
 
 .hero {
-    min-width: 1600px;
-    min-height: 824px;
+    margin:0 auto 0 auto;
+    padding: 0 178px 328px 177px;
+    max-width: 1600px;
+    //min-height: 824px;
     background-color: #FEFFFF;
     position: relative;
 
     header {
-        margin-top: 30px;
+        margin:0;
         z-index: 1;
         opacity: 2;
         // position: absolute;
@@ -33,35 +35,34 @@ body {
         z-index: 0;
         opacity: 1;
     }
+
+    .gradient {
+        position: absolute;
+        width: 827px;
+        height: 756px;
+        right: 773px;
+        z-index: 0;
+        opacity: 0.5;
+    }
 }
 
 .text {
-    position: absolute;
-    left: 177px;
-    top: 266px;
-    width: 609px;
-    height: 230px;
-    font-family: 'DM Sans', sans-serif;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: stretch;
-    // // justify-content: center;
+    margin: 0px 636px 0 0;
+    padding-top: 222px;
+    text-align: left;
 }
 
 .caption {
-    width: 609px;
-    height: 140px;
+    margin:0 0 30px 0;
     font-weight: 700;
     font-size: 64px;   
     line-height: 75px;
 }
 
 .small-text {
-    width: 515px;
-    height: 60px;
     font-weight: 400;
     font-size: 20px;
-    margin-top: 30px;
+    margin: 30px 94px 0 0;
     line-height: 30px;
 }
 
@@ -69,7 +70,7 @@ body {
     position: absolute;
     z-index: 1;
     background-color: rgba(252, 252, 253, 0.9);
-    width: 1200px;
+    max-width: 1200px;
     height: 136px;
     left: 200px;
     top: 688px;
@@ -115,7 +116,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 22px;
 line-height: 26px;
-/* or 116% */
 color: #00232B;
 }
 
@@ -145,9 +145,14 @@ img {
     box-shadow: 0px 8px 30px rgba(68, 68, 68, 0.404);
 }
 
+.services-container {
+    margin: 0 auto 0 auto;
+    padding: 200px 150px 0 147px;
+    max-width: 1600px;
+}
 .services-caption {
     margin-top: 200px;
-    margin-left: 544px;
+    margin:0 304px 98px 385px;
     font-family: DM Sans;
     
     h2 {
@@ -160,7 +165,7 @@ img {
     }
 
     p {
-        margin-left: 98px;
+        margin-left: 128px;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -172,11 +177,6 @@ img {
 
 .services-advantage {
     display: flex;
-    margin-left: 189px;
-    margin-top: 98px;
-    // position: relative;
-    height: 301px;
-    width: 1243px;
     justify-content: space-between;
     align-content: center;
 }
@@ -186,9 +186,10 @@ img {
     flex-direction: column;
     font-family: DM Sans;
     font-style: normal;
-    height: 241px;
-    max-width: 288px;
-    margin-right: 85px;
+    height: 301px;
+    max-width: 304px;
+    padding: 30px;
+    
     h5 {
         margin-top: 50px;
         margin-bottom: 20px;
@@ -196,15 +197,15 @@ img {
         font-size: 24px;
         line-height: 29px;
         color: #00232B;
+        display: block;
     }
     
     p {
-        margin-top: 0;
+        margin: 0;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
         color: #675F5F;
-        width: 228px;
     }
 
     &.last {
@@ -230,7 +231,6 @@ img {
 }
 
 .advantage:hover {
-    //border: 30px;
     background: #FFFFFF;
     box-shadow: 0px 14px 30px rgba(68, 68, 68, 0.1);
     border-radius: 10px;
@@ -239,13 +239,12 @@ img {
     }
 }
 
-.destination {
-    margin-top: 209px;
-    margin-left: 177px;
-    margin-right: 212px;
+.destination-container {
+   margin:0 auto 0 auto;
+   padding: 178px 196px 209px 193px;
     font-family: DM Sans;
     font-style: normal;
-    width: 1211px;
+    max-width: 1600px;
 
     h2 {
         font-weight: bold;
@@ -512,35 +511,28 @@ img {
 }
 
 .booking-system {
-    margin-top: 200px;
+    //margin-top: 200px;
     background-color: #F7FBFD;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    width: 1600px;
     font-family: DM Sans;
     font-style: normal;
+}
+
+.booking-system-container {
+    margin: 0 auto 0 auto;
+    padding: 100px  0 0 0;
+    max-width: 1395px;
     h2 {
-        max-width: 527px;
-        margin:auto;
-        //margin: 100px 0 20px 571px;
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding: 0;
-        // padding-top: 100px;
-        // padding-bottom: 20px;
-         //padding-right: 572px;
-        // padding-left: 571px;    
+        margin:0 auto 20px auto;
+        padding: 0;   
     font-weight: bold;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
     color: #00232A;
-    }
+}
 
     p {
-        margin: 0;
-       margin-left: 537px;
-       margin-right: 536px;
+        margin: 0 auto o auto;
        font-weight: normal;
        font-size: 16px;
        line-height: 26px;
@@ -550,10 +542,8 @@ img {
 }
 
 .search-destination {
-    margin-top: 100px;
-    margin-right: 262px;
-    margin-left: 239px;
-    height: 407px;
+    margin: 100px 136px 35px 160px;
+    //height: 407px;
     position: relative;
     font-family: DM Sans;
     font-style: normal;
@@ -565,9 +555,7 @@ img {
     }
 
     h3 {
-        margin: 0;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin: 40px 0 40px 0;
         font-weight: bold;
         font-size: 30px;
         line-height: 37px;
@@ -576,7 +564,7 @@ img {
 
     p {
         margin: 0;
-        margin-right: 706px;
+        padding: 0 729px 71px 0;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
@@ -604,10 +592,8 @@ img {
 }
 
 .select-destination {
-    margin-top: 70px;
-    margin-right: 276px;
-    margin-left: 224px;
-    height: 407px;
+    margin: 70px 173px 35px 122px;
+    //height: 407px;
     position: relative;
     font-family: DM Sans;
     font-style: normal;
@@ -629,7 +615,7 @@ img {
     }
     p {
         margin: 0;
-        margin-left: 712px;
+        padding: 0 0 71px 712px;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
@@ -657,10 +643,9 @@ img {
 }
 
 .booking-destination {
-    margin-top: 70px;
-    margin-right: 266px;
-    margin-left: 262px;
-    height: 407px;
+   margin: 70px 163px 0 160px;
+   padding-bottom: 100px;
+    //height: 407px;
     position: relative;
     font-family: DM Sans;
     font-style: normal;
@@ -682,7 +667,7 @@ img {
     }
     p {
         margin: 0;
-        margin-right: 678px;
+        padding: 0 678px 81px 0;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
@@ -712,15 +697,16 @@ img {
 
 }
 
-.testimonial {
-    margin: 200px 133px 200px 133px;
-    height: 504px;
-    width: 1334px;
+.testimonial-conteiner {
+    margin:0 auto 0 auto;
+    padding: 200px 133px 330px 133px;
+    //height: 504px;
+    max-width: 1600px;
     position: relative;
     
     .background {
         position: absolute;
-        left: 100px;
+        left: 233px;
         height: 504px;
         width: 465px;
         background-color: #F3FBFF;
@@ -732,8 +718,8 @@ img {
 
 .testimonial1 {
     position: absolute;
-    top:50px;
-    right: (1051-133)px;
+    top:250px;
+    left: 133px;
     width: 420px;
     height: 182px;
     z-index: 1;
@@ -792,14 +778,13 @@ img {
     }
 
     &.second {
-        top:272px;
-        right: 673px;
-        left: 245px;
+        top:472px;
+        left: 378px;
     }
 
 }
 
-.testemonial-text {
+.testimonial-text {
     margin: 15px 30px 30px 105px;
     font-family: DM Sans;
     font-style: normal;
@@ -810,14 +795,14 @@ img {
 }
 
 .Text-Testimonial {
-    position: absolute;
-    top: 131px;
-    left: 815px;
-    width: 519px;
+    // top: 131px;
+    // left: 815px;
+    // width: 519px;
+    margin: 131px 0 0 815px;
     font-family: DM Sans;
     font-style: normal;
     h2 {
-        margin: 0 0 20px 0;
+        margin: 131px 0 20px 0;
         font-weight: bold;
         font-size: 40px;
         line-height: 50px;
@@ -832,7 +817,7 @@ img {
     }
 
     button {
-        margin: 0 392px 0 0;
+        margin: 0 392px 30 0;
         width: 162px;
         height: 27px;
         background: #FFFFFF;
@@ -860,14 +845,19 @@ img {
 
 .footer {
     background-color: #070707;
-    position: relative;
     font-family: DM Sans;
     font-style: normal;
 }
 
+.footer-conteiner {
+    margin: auto;
+    padding: 66px 103px 0 102px;
+    position: relative;
+    max-width: 1600px;
+}
+
 .newsletter {
-  padding: 130px 431px 59px 431px;
-  //padding: 130px 290px 159px 302px;
+  padding: 64px 0 159px 0;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
@@ -920,7 +910,7 @@ img {
 }
 
 .general-information {
-    padding: 100px 206px 100px 178px;
+    padding: 0px 103px 100px 76px;
     display: flex;
     justify-content: space-between;
 }
@@ -988,8 +978,9 @@ ul {
 }
 
 .footer-social {
+    margin: 0 auto 0 auto;
     padding:0;
-    margin: 0 178px 0 178px;
+    max-width: 1244px; 
     border-top: 2px solid #181818;
     display: flex;
     align-items: center;
@@ -1010,6 +1001,8 @@ ul {
 .icons {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
     
     img {
         padding: 0;
