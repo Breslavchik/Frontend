@@ -27,6 +27,8 @@
 
 nav {
     display: flex;
+    align-items: center;
+    
 }
 .logo {
     font-size: 30px;
@@ -41,9 +43,11 @@ nav {
 
 .nav-link {
     font-size: 16px;
+    line-height: 16px;
     font-weight: 400;
     color: #757575;
     text-decoration: none;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid #ffffff00;
 
@@ -51,14 +55,13 @@ nav {
         margin-right: 59px;
     }
 
-    &.rigth {
+    &.right {
         margin-left: 115px;
         margin-right: 40px;
     }
 }
 
 .nav-link:hover {
-    padding-bottom: 10px;
     border-bottom: 2px solid #FF9A16;
     color:#FF9A16;
 }

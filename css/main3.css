@@ -32,6 +32,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -47,9 +50,11 @@ nav {
 
 .nav-link {
   font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
   color: #757575;
   text-decoration: none;
+  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid #ffffff00;
 }
@@ -58,13 +63,12 @@ nav {
   margin-right: 59px;
 }
 
-.nav-link.rigth {
+.nav-link.right {
   margin-left: 115px;
   margin-right: 40px;
 }
 
 .nav-link:hover {
-  padding-bottom: 10px;
   border-bottom: 2px solid #FF9A16;
   color: #FF9A16;
 }
@@ -113,16 +117,16 @@ body {
 .hero .background-image {
   position: absolute;
   left: 827px;
-  width: 773px;
-  height: 756px;
+  max-width: 773px;
+  max-height: 756px;
   z-index: 0;
   opacity: 1;
 }
 
 .hero .gradient {
   position: absolute;
-  width: 827px;
-  height: 756px;
+  max-width: 827px;
+  max-height: 756px;
   right: 773px;
   z-index: 0;
   opacity: 0.5;

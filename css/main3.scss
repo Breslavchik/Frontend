@@ -30,16 +30,16 @@ body {
     .background-image {
         position: absolute;
         left: 827px;
-        width: 773px;
-        height: 756px;
+        max-width: 773px;
+        max-height: 756px;
         z-index: 0;
         opacity: 1;
     }
 
     .gradient {
         position: absolute;
-        width: 827px;
-        height: 756px;
+        max-width: 827px;
+        max-height: 756px;
         right: 773px;
         z-index: 0;
         opacity: 0.5;
