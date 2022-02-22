@@ -1,6 +1,6 @@
 .container {
   z-index: 1;
-  max-width: 1245px;
+  max-width: 1395px;
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -11,9 +11,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  top: 30px;
-  left: 177px;
+  padding: 30px 75px 20px 77px;
+  margin: 0 auto 0 auto;
 }
 
 .flex-container {
@@ -41,11 +40,11 @@ nav {
   font-size: 30px;
   font-weight: 500;
   color: #00232B;
-  margin-right: 309px;
+  padding-right: 309px;
 }
 
 .logo img {
-  margin-right: 18px;
+  padding-right: 18px;
 }
 
 .nav-link {
@@ -83,6 +82,7 @@ nav {
   background-color: #FFF0DB;
   border-radius: 6%;
   border: 0;
+  cursor: pointer;
 }
 
 .register:hover {
@@ -96,46 +96,54 @@ nav {
 }
 
 body {
+  background-color: #FEFFFF;
   margin: auto;
   font-family: 'DM Sans', sans-serif;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin: 0;
+  z-index: 5;
+  background-color: #f7fbfd78;
+}
+
 .hero {
-  margin: 0 auto 0 auto;
-  padding: 0 178px 328px 177px;
-  max-width: 1600px;
+  margin: 0;
+  padding: 0;
   background-color: #FEFFFF;
+  position: relative;
+  background-image: url("../LandingImages/gradient color.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-conteiner {
+  margin: 0 auto 0 auto;
+  padding: 100px 0 0 0;
+  max-width: 1395px;
+  height: 756px;
   position: relative;
 }
 
-.hero header {
-  margin: 0;
+.hero-conteiner .background-image {
+  position: absolute;
+  bottom: 0;
+  left: 727px;
+  height: 756px;
   z-index: 1;
-  opacity: 2;
-}
-
-.hero .background-image {
-  position: absolute;
-  left: 827px;
-  max-width: 773px;
-  max-height: 756px;
-  z-index: 0;
   opacity: 1;
-}
-
-.hero .gradient {
-  position: absolute;
-  max-width: 827px;
-  max-height: 756px;
-  right: 773px;
-  z-index: 0;
-  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text {
-  margin: 0px 636px 0 0;
-  padding-top: 222px;
+  padding: 166px 41px 260px 75px;
   text-align: left;
+  width: 725px;
 }
 
 .caption {
@@ -154,13 +162,14 @@ body {
 
 .search-bar {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(252, 252, 253, 0.9);
-  max-width: 1200px;
-  height: 136px;
-  left: 200px;
-  top: 688px;
-  border-color: 1px solid #FCFCFD;
+  width: 1200px;
+  bottom: -68px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px solid #FCFCFD;
   border-radius: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,13 +177,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 40px 40px 36px;
   -webkit-box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
           box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
 }
 
 .info-link {
-  margin-left: 36px;
-  margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,8 +193,8 @@ body {
 
 .info-link img {
   height: 20px;
-  width: 20px;
-  margin-right: 16px;
+  width: 36px;
+  padding-right: 16px;
 }
 
 .info-section {
@@ -230,7 +241,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin: 0px 10px;
+  cursor: pointer;
 }
 
 .search img {
@@ -251,9 +262,8 @@ body {
 }
 
 .services-caption {
-  margin-top: 200px;
-  margin: 0 304px 98px 385px;
   font-family: DM Sans;
+  padding: 68px 0 98px 385px;
 }
 
 .services-caption h2 {
@@ -262,11 +272,11 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #00232B;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .services-caption p {
-  margin-left: 128px;
+  padding: 0 0 0 98px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -298,6 +308,7 @@ body {
   height: 301px;
   max-width: 304px;
   padding: 30px;
+  cursor: pointer;
 }
 
 .advantage h5 {
@@ -354,6 +365,8 @@ body {
 }
 
 .advantage:hover .icon {
+  -webkit-box-shadow: 0px 8px 30px rgba(255, 154, 22, 0.07);
+          box-shadow: 0px 8px 30px rgba(255, 154, 22, 0.07);
   background: #FF9A16;
 }
 
@@ -362,7 +375,7 @@ body {
   padding: 178px 196px 209px 193px;
   font-family: DM Sans;
   font-style: normal;
-  max-width: 1600px;
+  width: 1592px;
 }
 
 .destination-container h2 {
@@ -386,22 +399,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 55px;
+  padding-top: 55px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.links button {
-  margin: 0;
-  padding: 0;
-  margin-left: 603px;
-  width: 162px;
-  height: 27px;
-  background: #FFFFFF;
-  border-radius: 6px;
-  border: 0;
-  border-bottom: 1px solid #444444;
+.link-onward {
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid white;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -411,9 +418,15 @@ body {
   color: #00232B;
 }
 
-.links button img {
+.link-onward img {
+  vertical-align: bottom;
   width: 20px;
   height: 20px;
+}
+
+.link-onward:hover {
+  border-bottom: 1px solid #444444;
+  font-weight: bold;
 }
 
 .destination-link {
@@ -442,33 +455,27 @@ body {
 .destination-link a:hover {
   border-bottom: 1px solid #FF9A16;
   color: #FF9A16;
+  font-weight: bold;
 }
 
-.links button:hover {
-  border: 1px solid rgba(68, 68, 68, 0.2);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 8px 30px rgba(68, 68, 68, 0.05);
-          box-shadow: 0px 8px 30px rgba(68, 68, 68, 0.05);
-  border-radius: 6px;
+.destination-link a:active {
+  border-bottom: 1px solid #FF9A16;
+  color: #FF9A16;
+  font-weight: bold;
 }
 
 .places-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 212px;
   margin-top: 40px;
-  width: 1210px;
-  height: 339px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .place {
-  width: 280px;
-  height: 339px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,17 +486,18 @@ body {
   background: #FFFFFF;
   border: 1px solid rgba(68, 68, 68, 0.1);
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .photo {
-  margin: 20px;
-  width: 244px;
+  padding-bottom: 20px;
+  width: 240px;
   height: 155px;
   position: relative;
 }
 
 .photo img {
-  width: 244px;
+  width: 240px;
   height: 155px;
   border-radius: 10px;
   z-index: 0;
@@ -499,7 +507,7 @@ body {
   position: absolute;
   top: 104px;
   height: 51px;
-  width: 244px;
+  width: 238px;
   background-color: #444444;
   opacity: 0.2;
   border-radius: 0px 0px 10px 10px;
@@ -511,10 +519,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 120px;
-  margin-bottom: 16px;
-  margin-left: 17px;
-  margin-right: 18px;
+  bottom: 16px;
+  padding-left: 17px;
+  padding-right: 18px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -551,11 +558,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 20px;
 }
 
 .place-name-reiting h6 {
   margin: 0;
-  margin-left: 20px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -568,7 +575,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 20px;
+  padding-left: 12px;
 }
 
 .place-name-reiting .star img {
@@ -590,10 +597,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 12px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 15px;
+  padding: 12px 0 15px 0;
+  margin: 0;
   border-bottom: 1px solid #787878;
 }
 
@@ -617,9 +622,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 23px;
+  padding: 23px 0 8px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -665,7 +668,7 @@ body {
   border-radius: 12px;
 }
 
-.place:hover .price-book button {
+.price-book button:hover {
   background: #FF9A16;
   color: #FFFFFF;
 }
@@ -865,14 +868,19 @@ body {
 
 .testimonial-conteiner {
   margin: 0 auto 0 auto;
-  padding: 200px 133px 330px 133px;
+  padding: 200px 133px 200px 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1600px;
-  position: relative;
 }
 
 .testimonial-conteiner .background {
-  position: absolute;
-  left: 233px;
+  position: relative;
+  margin-left: 100px;
   height: 504px;
   width: 465px;
   background-color: #F3FBFF;
@@ -882,8 +890,6 @@ body {
 
 .testimonial1 {
   position: absolute;
-  top: 250px;
-  left: 133px;
   width: 420px;
   height: 182px;
   z-index: 1;
@@ -891,6 +897,15 @@ body {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 40px rgba(148, 148, 148, 0.15);
           box-shadow: 0px 8px 40px rgba(148, 148, 148, 0.15);
+}
+
+.testimonial1.first {
+  top: 50px;
+  left: -100px;
+}
+
+.testimonial1 .name-location {
+  padding-left: 20px;
 }
 
 .testimonial1 .photo-name {
@@ -901,13 +916,16 @@ body {
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .testimonial1 .photo-name .photo {
   margin: 0;
   width: 55px;
   height: 55px;
-  margin-right: 20px;
+  padding: 0;
 }
 
 .testimonial1 .photo-name .name {
@@ -927,7 +945,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   color: #787878;
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
 .testimonial1 .location .flag {
@@ -959,8 +977,8 @@ body {
 }
 
 .testimonial1.second {
-  top: 472px;
-  left: 378px;
+  bottom: 50px;
+  right: -100px;
 }
 
 .testimonial-text {
@@ -974,13 +992,14 @@ body {
 }
 
 .Text-Testimonial {
-  margin: 131px 0 0 815px;
+  padding: 131px 0 0 0;
+  width: 519px;
   font-family: DM Sans;
   font-style: normal;
 }
 
 .Text-Testimonial h2 {
-  margin: 131px 0 20px 0;
+  margin: 0 0 20px 0;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
@@ -995,29 +1014,7 @@ body {
   color: #675F5F;
 }
 
-.Text-Testimonial button {
-  margin: 0 392px 30 0;
-  width: 162px;
-  height: 27px;
-  background: #FFFFFF;
-  border-radius: 6px;
-  border: 0;
-  border-bottom: 1px solid #444444;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: left;
-  color: #00232B;
-}
-
-.Text-Testimonial button img {
-  width: 20px;
-  height: 20px;
-}
-
-.Text-Testimonial button:hover {
+.link-onward:hover {
   color: #FF9A16;
   border-bottom: 1px solid #FF9A16;
 }
@@ -1054,8 +1051,7 @@ body {
 }
 
 .email {
-  margin: auto;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   width: 382px;
   height: 60px;
   background: #FFFFFF;
@@ -1073,9 +1069,11 @@ body {
 
 .email input {
   border: none;
-  margin: 17px 5px 17px 25px;
+  border-radius: 30px;
+  padding: 17px 5px 17px 25px;
   font-size: 13px;
   color: #787878;
+  outline-width: 0;
 }
 
 .email button {
@@ -1089,6 +1087,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .general-information {

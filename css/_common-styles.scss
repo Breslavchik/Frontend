@@ -2,18 +2,17 @@
 
 .container {
     z-index: 1;
-    // margin-top: 30px;
-    // margin-left: 177px;
-    max-width: 1245px;
+    max-width: 1395px;
     font-family: 'DM Sans', sans-serif;
 }
 
 .flex-between {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 30px;
-    left: 177px;
+    //position: absolute;
+    padding: 30px 75px 20px 77px;
+    margin: 0 auto 0 auto;
+    //left: 177px;
 
 }
 
@@ -34,10 +33,10 @@ nav {
     font-size: 30px;
     font-weight: 500;
     color: #00232B;
-     margin-right: 309px;
+     padding-right: 309px;
 
     img {
-        margin-right: 18px;
+        padding-right: 18px;
     }
 }
 
@@ -76,6 +75,7 @@ nav {
     background-color: #FFF0DB;
     border-radius: 6%;
     border:0; 
+    cursor: pointer;
 }
 
 .register:hover {
