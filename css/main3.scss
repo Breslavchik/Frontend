@@ -18,8 +18,11 @@ header {
     right: 0;
     width: 100vw;
     margin:0;
-    z-index: 5;
-    background-color: #f7fbfd78;
+    z-index: 3;
+
+    &.altered {
+        background-color: #b2c2f79a;
+    }
 }
 .hero {
     margin: 0;
@@ -1000,12 +1003,10 @@ ul {
 }
 
 .only-mobile {
-    display: none;
+    display: none !important;
 }
 
-.only-dekstop {
-    visibility: visible;
-}
+
 
 .carousel-wrapper {
     position: relative;
@@ -1068,11 +1069,22 @@ ul {
 
 @media (max-width: 900px){
     .only-dekstop {
-        display: none;
+        display: none !important;
     }
+
     .only-mobile {
-        display: contents;
+        display: contents !important;
     }
+    html {
+        overflow: auto;
+    }
+
+    body {
+        overflow: hidden;
+        position: relative;
+    }
+
+    
     
     .hero-conteiner {
         margin: 0 auto 0 auto;
