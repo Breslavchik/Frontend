@@ -719,10 +719,10 @@ img {
 
 .testimonial1 {
 
-    &.first {
+    // &.first {
         top:50px;
         left: -100px;
-    }
+    // }
     position: absolute;
     width: 420px;
     height: 182px;
@@ -787,7 +787,8 @@ img {
         }
     }
 
-    &.second {
+    // &.second {
+        & +.testimonial1 {
         bottom: 50px;
         right: -100px;
     }
@@ -1013,6 +1014,60 @@ ul {
 }
 
 .carousel-frame {
+    overflow: hidden ;
+    height: 298px;
+}
+
+.carousel-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 115px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &.left {
+        left: 5px;
+    }
+    
+    &.right {
+        right: 5px;
+        transform: rotateZ(180deg);
+    }
+}
+
+.carousel-switcher {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+.carousel-switch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #c1c1c1;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    & + .carousel-switch {
+        margin-left: 15px;
+    }
+
+    &.active {
+        border-width: 0;
+        background-color: #FF9A16;
+    }
+
+    &:hover {
+        background-color: #EAF4FC;
+    }
+}
+
+.carousel-frame-advantage {
     overflow: hidden;
     height: 298px;
 }

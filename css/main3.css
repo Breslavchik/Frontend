@@ -950,6 +950,8 @@ header.altered {
 }
 
 .testimonial1 {
+  top: 50px;
+  left: -100px;
   position: absolute;
   width: 420px;
   height: 182px;
@@ -958,11 +960,6 @@ header.altered {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 40px rgba(148, 148, 148, 0.15);
           box-shadow: 0px 8px 40px rgba(148, 148, 148, 0.15);
-}
-
-.testimonial1.first {
-  top: 50px;
-  left: -100px;
 }
 
 .testimonial1 .name-location {
@@ -1037,7 +1034,7 @@ header.altered {
   line-height: 18px;
 }
 
-.testimonial1.second {
+.testimonial1 + .testimonial1 {
   bottom: 50px;
   right: -100px;
 }
@@ -1284,6 +1281,64 @@ ul a:hover {
 }
 
 .carousel-frame {
+  overflow: hidden;
+  height: 298px;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 115px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-arrow.left {
+  left: 5px;
+}
+
+.carousel-arrow.right {
+  right: 5px;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.carousel-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.carousel-switch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.carousel-switch + .carousel-switch {
+  margin-left: 15px;
+}
+
+.carousel-switch.active {
+  border-width: 0;
+  background-color: #FF9A16;
+}
+
+.carousel-switch:hover {
+  background-color: #EAF4FC;
+}
+
+.carousel-frame-advantage {
   overflow: hidden;
   height: 298px;
 }
